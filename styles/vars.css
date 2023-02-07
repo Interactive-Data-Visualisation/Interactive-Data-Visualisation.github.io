@@ -1,0 +1,34 @@
+:root{
+    --clr-accent-bg: rgb(133,158,164);
+    --clr-accent-bg-tsp: rgba(133,158,164,0.5);
+    --clr-white: rgb(250,250,250);
+    --clr-black: rgb(40, 40, 40);
+
+    /* --clr-accent: rgb(229,35,63);
+    --clr-accent-dark: rgb(189, 22, 46);
+    --clr-accent-desat: rgb(190, 74, 91); */
+
+    --clr-accent: #3b5a52;
+    --clr-accent-dark: #384a46;
+}
+
+/* redefining Bootstrap vars */
+.nav-pills{
+    --bs-nav-pills-link-active-bg: var(--clr-accent);
+}
+
+.nav{
+    --bs-nav-link-color: var(--clr-accent);
+    --bs-nav-link-hover-color: var(--clr-accent-dark);
+}
+
+.btn-primary{
+    --bs-btn-bg: var(--clr-accent);
+    --bs-btn-border-color: var(--clr-accent);
+    --bs-btn-hover-bg: var(--clr-accent-dark);
+    --bs-btn-hover-border-color: var(--clr-accent-dark);
+    --bs-btn-active-bg: var(--clr-accent-dark);
+    --bs-btn-active-border-color: var(--clr-accent-dark);
+    --bs-btn-disabled-bg: var(--clr-accent-desat);
+    --bs-btn-disabled-border-color: var(--clr-accent-desat);
+}

@@ -4,14 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Data Visualisation</title>
+    <title>Interactive Data Visualisation - Course</title>
 
-    <script src="libs/tailwind/tailwind.min.js"></script>
+    <link rel="stylesheet" href="../libs/bootstrap/v5/bootstrap.min.css">
+    <script src="../libs/bootstrap/v5/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../libs/bootstrap/icons/bootstrap-icons.css">
+
+    <script src="../libs/marked/marked.min.js"></script>
+
+    <script src="../libs/highlight/highlight.min.js"></script>
+    <link rel="stylesheet" href="../libs/highlight/atom-one-dark.min.css">
+
+    <link rel="stylesheet" href="../styles/main.css">
 
 </head>
 <body>
+    <header class="py-4 px-5 mb-4" include-html="header.html"></header>
+    <div class="container flex-column d-flex justify-content-center">
+        <div class="card m-2">
+            <h3 class="card-header">Course Information</h3>
+            <div class="card-body">
+                <p class="card-text">
+                    This course teaches the theoretical principles of visualising data and supporting dynamic 
+                    analysis with interaction, partly inspired by the book
+                    <i>Visualization Analysis & Design</i> by Tamara Munzner (2015). The books
+                    <i>Visualize This</i> (2011) and <i>Data Points</i> (2013) by Nathan Yau are also good references.
+                </p>
+                <p class="card-text">
+                    It also puts this theory in practice with <i><a href="https://d3js.org">D3.js</a></i>, 
+                    by building interacctive data visualisation dashboards from scratch. The documentation 
+                    for <i>D3.js</i> can be found <a href="https://github.com/d3/d3/blob/main/API.md">here</a>. 
+                    There are several books, online tutorials and fora explaining and demonstrating D3 examples. 
+                    Note, however, that this course uses version 7 of the library, so some resources may be outdated!
+                    The <a href="https://observablehq.com/">Observable</a> community also has plenty of examples to explore.
+                </p>
+                <p class="card-text">
+                    The <a href="https://developer.mozilla.org/en-US/docs/Web">MDN Web Documentation</a> should
+                    also be used for up-to-date HTML, CSS, SVG and JavaScript references.
+                </p>
+                <p class="card-text">
+                    Please refer to your Moodle page for assessement details and general communication with the teaching team.
+                </p>
+            </div>
+        </div>
+        <div class="card m-2">
+            <h3 class="card-header">Lectures</h3>
+            <div class="card-body">
+                <p class="card-text">
+                    The lectures comprise 9 Units covering the theoretical knowledge behind visualising datasets and
+                    supporting interactivity.
+                </p>
+                <p class="card-text">
+                    Each lecture includes some notes and PDF slides.
+                </p>
+            </div>
+        </div>
 
-    <h1>Welcome to Interactive Data Visualisation!</h1>
-    
+        <div class="card m-2">
+            <h3 class="card-header">Tutorials</h3>
+            <div class="card-body">
+                <p class="card-text">
+                    The tutorials mostly serve as introduction to the practicals, covering technical aspects of D3.js 
+                    (and web development) often in relation to the lecture material too.
+                </p>
+                <p class="card-text">
+                    Each tutorial includes some notes and PDF slides.
+                </p>
+            </div>
+        </div>
+
+        <div class="card m-2">
+            <h3 class="card-header">Practicals</h3>
+            <div class="card-body">
+                <p class="card-text">
+                    The practicals consist of guided exercises applying the concepts seen in tutorials. They also include
+                    self-study activities to go further.
+                </p>
+                <p class="card-text">
+                    Each practical builds on-top of the other, and should therefore be completed in order. The first practical
+                    covers the development environment and serves as a introduction/revision to basic web development concepts.
+                </p>
+                <p class="card-text">
+                    External libraries and data files will be provided for each practical.
+                </p>
+            </div>
+        </div>
+
+        <div class="card m-2">
+            <h3 class="card-header">Workshops</h3>
+            <div class="card-body">
+                <p class="card-text">
+                    The workshops are bundled content for lectures, tutorials and practicals. Summary slides are also provided.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="mt-4 pt-2 container" include-html="footer.html"></footer>
+    <script src="scripts/pageSetup.js"></script>
 </body>
 </html>

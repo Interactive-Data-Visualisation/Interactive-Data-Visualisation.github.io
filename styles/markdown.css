@@ -1,0 +1,19 @@
+#md-content{
+    background-color: #fefefe;
+    padding: 12px 24px;
+    border-radius: 4px;
+}
+
+#md-content pre code{
+    margin: 8px 12px;
+    border-radius: 2px;
+}
+
+#md-content blockquote{
+    background-color: #efefef;
+    margin: 8px 12px;
+    
+    padding: 8px 12px 8px 32px;
+    border-left: solid 4px #bababa;
+    border-radius: 2px;
+}

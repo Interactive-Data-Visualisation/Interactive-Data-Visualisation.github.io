@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Data Visualisation - Practicals</title>
+
+    <link rel="stylesheet" href="../libs/bootstrap/v5/bootstrap.min.css">
+    <script src="../libs/bootstrap/v5/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../libs/bootstrap/icons/bootstrap-icons.css">
+
+    <script src="../libs/marked/marked.min.js"></script>
+
+    <script src="../libs/highlight/highlight.min.js"></script>
+    <link rel="stylesheet" href="../libs/highlight/atom-one-dark.min.css">
+
+    <link rel="stylesheet" href="../styles/main.css">
+
+</head>
+<body>
+    <header class="py-4 px-5 mb-4" include-html="../header.html"></header>
+    <div class="row container mx-auto">
+        <div class="col-4 col-md-3">
+            <div class="sticky-top">
+                <h2 class="text-center"><i class="mx-3 bi bi-laptop"></i>Practicals</h2>
+                <hr>
+                <div class="nav flex-column nav-pills me-3" id="tabs" role="tablist" aria-orientation="vertical">
+                    <!-- Items will be filled here -->
+                </div>
+            </div>
+        </div>
+        <div class="col-8 col-md-9">
+            <div id="md-content">
+                <!-- Content will be filled here -->
+            </div>
+            <div id="resources" class="d-flex justify-content-center flex-wrap">
+                <!-- Resource links will be filled here -->
+            </div>
+        </div>
+    </div>
+    <footer class="mt-4 pt-2 container" include-html="../footer.html"></footer>
+
+    <script>
+        
+        // markdown page data
+        const pages = {
+            'index':{ 'title': 'Introduction', 'page': 'index.md', 'resources': [] },
+            'prac1':{ 'title': '1 - Web Development', 'page': 'practical1.md', 'resources': [] },
+            'prac2':{ 'title': '2 - D3 Selections', 'page': 'practical2.md', 'resources': [] },
+            'prac3':{ 'title': '3 - Scales & Axes', 'page': 'practical3.md', 'resources': [] },
+            'prac4':{ 'title': '4 - D3 Shapes', 'page': 'practical4.md', 'resources': [] },
+            'prac5':{ 'title': '5 - Data Operations', 'page': 'practical5.md', 'resources': [] }
+        }
+        
+    </script>
+    <script src="../scripts/pageSetup.js"></script>
+</body>
+</html>

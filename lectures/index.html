@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Data Visualisation - Lectures</title>
+
+    <link rel="stylesheet" href="../libs/bootstrap/v5/bootstrap.min.css">
+    <script src="../libs/bootstrap/v5/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../libs/bootstrap/icons/bootstrap-icons.css">
+
+    <script src="../libs/marked/marked.min.js"></script>
+
+    <script src="../libs/highlight/highlight.min.js"></script>
+    <link rel="stylesheet" href="../libs/highlight/atom-one-dark.min.css">
+
+    <link rel="stylesheet" href="../styles/main.css">
+
+</head>
+<body>
+    <header class="py-4 px-5 mb-4" include-html="../header.html"></header>
+    <div class="row container mx-auto">
+        <div class="col-4 col-md-3">
+            <div class="sticky-top">
+                <h2 class="text-center"><i class="mx-3 bi bi-card-list"></i>Lectures</h2>
+                <hr>
+                <div class="nav flex-column nav-pills me-3" id="tabs" role="tablist" aria-orientation="vertical">
+                    <!-- Items will be filled here -->
+                </div>
+            </div>
+        </div>
+        <div class="col-8 col-md-9">
+            <div id="md-content">
+                <!-- Content will be filled here -->
+            </div>
+            <div id="resources" class="d-flex justify-content-center flex-wrap">
+                <!-- Resource links will be filled here -->
+            </div>
+        </div>
+    </div>
+    <footer class="mt-4 pt-2 container" include-html="../footer.html"></footer>
+
+    <script>
+
+        // markdown page data
+        const pages = {
+            'index':{ 'title': 'Introduction', 'page': 'index.md', 'resources': [] },
+            'lec1':{ 'title': '1 - Visualisation, Data & Tasks', 'page': 'lecture1.md', 'resources': [['Slides','./slides/L1_Vis_Data_Tasks.pdf']] },
+            // 'lec2':{ 'title': '2 - Visualisation Components', 'page': 'lecture2.md', 'resources': [['Slides','./slides/lecture2.pdf']] }
+        }
+        //     ['intro', 'Introduction', 'introduction.md'],
+        //     ['lec1', '1 - Visualisation, Data & Tasks', 'lecture1.md', [['Slides','./slides/lecture1.pdf']]],
+        //     ['lec2', '2 - Visualisation Components', 'lecture2.md'],
+        //     ['lec3', '3 - Visualising Tabular Data', 'lecture3.md'],
+        //     ['lec4', '4 - Interaction (Data)', 'lecture4.md'],
+        //     ['lec5', '5 - Interaction (View)', 'lecture5.md'],
+        //     ['lec6', '6 - Multiple Views', 'lecture6.md'],
+        //     ['lec7', '7 - Visualising Time & Space', 'lecture7.md'],
+        //     ['lec8', '8 - Visualising Networks', 'lecture8.md'],
+        //     ['lec9', '9 - Guidelines & Evaluation', 'lecture9.md']
+        // ]
+
+        
+
+        
+        
+        
+    </script>
+    <script src="../scripts/pageSetup.js"></script>
+</body>
+</html>

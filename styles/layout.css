@@ -1,0 +1,28 @@
+body{
+    min-height: 100%;
+    background-color: var(--clr-accent-bg);
+    background: linear-gradient(135deg, var(--clr-white) 50%, var(--clr-accent-bg-tsp) 150%);
+    background-attachment: fixed;
+}
+
+header{
+    background-color: var(--clr-accent);
+}
+
+header h1{
+    color: var(--clr-white);
+}
+
+header .nav-link{
+    color: var(--clr-white);
+    border-radius: 2px;
+}
+
+header .nav-link:hover{
+    background-color: var(--clr-white);
+    color: var(--clr-accent);
+}
+
+footer{
+    border-top: solid 1px var(--clr-accent);
+}
