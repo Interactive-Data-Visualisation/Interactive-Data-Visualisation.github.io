@@ -1,11 +1,14 @@
 'use strict';
 
+// tab container
+let navTabs = document.querySelector('#tabs');
+// content container
+let md_container = document.querySelector('div#md-content');
+let resources_container = document.querySelector('div#resources');
 
 // if pages have been defined in the html
-if(typeof pages !== 'undefined'){
+if(typeof pages !== 'undefined' && Object.keys(pages).length > 0){
     // set up navigation
-    let navTabs = document.querySelector('#tabs');
-
     for(let k of Object.keys(pages)){
         let bNode = document.createElement('button');
         bNode.setAttribute('class', 'nav-link');
@@ -19,12 +22,7 @@ if(typeof pages !== 'undefined'){
         bNode.innerHTML = pages[k]['title'];
         navTabs.append(bNode);
     }
-
-
     // navigation events
-    let md_container = document.querySelector('div#md-content');
-    let resources_container = document.querySelector('div#resources')
-
     let triggerTabList = [].slice.call(document.querySelectorAll('#tabs button'))
     triggerTabList.forEach(function (triggerEl) {
         var tabTrigger = new bootstrap.Tab(triggerEl)
@@ -42,6 +40,7 @@ if(typeof pages !== 'undefined'){
                         a.setAttribute('target', '_blank');
                     })
                     if(pages[triggerEl.getAttribute('id')]['resources'].length > 0){
+                        resources_container.style.visibility = 'visible';
                         pages[triggerEl.getAttribute('id')]['resources'].forEach(r=>{
                             let link = document.createElement('a');
                             link.setAttribute('class', 'btn btn-primary btn-lg m-2 px-5 py-3');
@@ -50,17 +49,21 @@ if(typeof pages !== 'undefined'){
                             link.innerHTML = r[0];
                             resources_container.append(link)
                         })
+                    } else {
+                        resources_container.style.visibility = 'hidden';
                     }
                     window.scrollTo(0,0);
                 })
             window.location.hash = triggerEl.getAttribute('id')
         })
     })
-
     // Lookup hash to render correct page
     let hash = window.location.hash;
     if(hash == '') hash = `#${Object.keys(pages)[0]}`;
     document.querySelector(`${hash}`).click();
+} else {
+    md_container.style.visibility = 'hidden';
+    resources_container.style.visibility = 'hidden';
 }
 
 // Include HTML call for headers and footers
