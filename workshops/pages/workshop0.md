@@ -26,7 +26,7 @@ At the bottom of this page, you will also find a reference document that you can
 
 ### Objectives
 
-We will cover SVG specifics during the workshops. In this practical, we will focus on the following points:
+We will cover SVG specifics during the workshops. In this activity, we will focus on the following points:
 
  - Setting up a development environment for this module;
  - Creating a basic HTML document;
