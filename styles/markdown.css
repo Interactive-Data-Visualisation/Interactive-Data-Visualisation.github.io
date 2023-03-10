@@ -11,3 +11,8 @@
     border-left: solid 4px #bababa;
     border-radius: 2px;
 }
+
+#md-content img{
+    width: 90%;
+    margin: 8px 5%;
+}

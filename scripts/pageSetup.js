@@ -62,8 +62,8 @@ if(typeof pages !== 'undefined' && Object.keys(pages).length > 0){
     if(hash == '') hash = `#${Object.keys(pages)[0]}`;
     document.querySelector(`${hash}`).click();
 } else {
-    md_container.style.visibility = 'hidden';
-    resources_container.style.visibility = 'hidden';
+    if (md_container !== null) md_container.style.visibility = 'hidden';
+    if (resources_container !== null) resources_container.style.visibility = 'hidden';
 }
 
 // Include HTML call for headers and footers

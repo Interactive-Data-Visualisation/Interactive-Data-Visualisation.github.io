@@ -1,15 +1,16 @@
 :root{
-    --clr-accent-bg: rgb(133,158,164);
-    --clr-accent-bg-tsp: rgba(133,158,164,0.5);
+    --clr-accent-bg: rgb(102,102,102);
+    --clr-accent-bg-tsp: rgba(102,102,102,0.5);
     --clr-white: rgb(250,250,250);
-    --clr-black: rgb(40, 40, 40);
+    --clr-black: rgb(21, 21, 21);
 
     /* --clr-accent: rgb(229,35,63);
     --clr-accent-dark: rgb(189, 22, 46);
     --clr-accent-desat: rgb(190, 74, 91); */
 
-    --clr-accent: #3b5a52;
-    --clr-accent-dark: #384a46;
+    --clr-accent:  rgb(0, 96, 100);
+    --clr-second: rgb(69, 90, 100);
+    --clr-accent-dark: rgb(0, 85, 89);
 }
 
 /* redefining Bootstrap vars */

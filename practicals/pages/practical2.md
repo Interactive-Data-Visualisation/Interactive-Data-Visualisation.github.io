@@ -109,16 +109,16 @@ With the `svg` elements and selections in place, we can start drawing charts.
 First, let's have some data. We will be using dog breed registration data from 2020 ([link](https://www.thekennelclub.org.uk/media-centre/breed-registration-statistics/)), weight and height were taken from Wikipedia. In `main.js` delacre the following data array:
 
 ```
-let dogs = [{breed:'Golden Retriever', count:8653, weight: 39.5, height: 56},
-    {breed:'Alaskan Malamute', count:261, weight: 36, height: 61},
-    {breed:'Newfoundland', count:577, weight: 67.5, height: 68.5},
-    {breed:'Siberian Husky', count:391, weight: 21.5, height: 55.5},
-    {breed:'Shiba Inu', count:434, weight: 9, height: 38},
-    {breed:'Keeshond', count:82, weight: 17.5, height: 44},
-    {breed:'Australian Shepherd', count:255, weight: 24, height: 52},
-    {breed:'Border Collie', count:1718, weight: 16, height: 51},
-    {breed:'German Shepherd', count:7067, weight: 31, height: 60},
-    {breed:'Swiss Shepherd', count:110, weight: 32.5, height: 60.5}]
+let dogs = [{breed: 'Golden Retriever', count: 8653, weight: 39.5, height: 56},
+    {breed: 'Alaskan Malamute', count: 261, weight: 36, height: 61},
+    {breed: 'Newfoundland', count: 577, weight: 67.5, height: 68.5},
+    {breed: 'Siberian Husky', count: 391, weight: 21.5, height: 55.5},
+    {breed: 'Shiba Inu', count: 434, weight: 9, height: 38},
+    {breed: 'Keeshond', count: 82, weight: 17.5, height: 44},
+    {breed: 'Australian Shepherd', count: 255, weight: 24, height: 52},
+    {breed: 'Border Collie', count: 1718, weight: 16, height: 51},
+    {breed: 'German Shepherd', count: 7067, weight: 31, height: 60},
+    {breed: 'Swiss Shepherd', count: 110, weight: 32.5, height: 60.5}]
 ```
 
 Each entry is a record with 4 attributes: `breed` is the name of the dog breed, `count` is the number of registrations, `weight` is the average breed weight, `height` is the average breed height.
