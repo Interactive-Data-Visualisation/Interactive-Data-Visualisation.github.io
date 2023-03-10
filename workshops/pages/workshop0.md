@@ -47,7 +47,7 @@ In your system, create a project root directory, that you can name `DataVis_code
 
 Then, open the Extension panel (on the left) and search for the `Live Server` extension and install it. You should then see a `Go Live` option at the bottom right of the editor. Clicking on it should open your browser, at the URL: `127.0.0.1:5500`.
 
-![VSCode](./img/VSCode.png)
+![VSCode](../resources/img/VSCode.png)
 
 This is called a **local HTTP Server**, which mimicks a real system that serves files over an HTTP protocol. Check [this page](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server#the_problem_with_testing_local_files) for more details on why this is important when testing websites.
 
